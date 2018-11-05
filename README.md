@@ -17,6 +17,6 @@ A successful AXI write transaction is seen below:
 A successful AXI read transaction is seen below:
 ![AXI read transaction](ReadTransaction.png)
 
-The FIFO modules provide a buffer between the AXI interface and the ALU, to allow the ALU to properly read input and write output.
+The FIFO modules provide a buffer between the AXI interface and the ALU, to allow the ALU to properly read input and write output. In operation, two FIFOs are instantiated, one for data to the ALU and one for data from the ALU.
 
 The ALU module is a simple ALU that takes an opcode and three arguments. It supports addition and multiplication, as well as a third operation that was added as an exercise, "MUL\_ADD," that adds the third argument to the product of the first and second argument. 
