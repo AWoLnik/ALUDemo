@@ -1,6 +1,6 @@
-# Verilog Demo
+# ALU Demo
 
-This repository is a demonstration of three interconnected Verilog modules, taken from another project and intended to run on an Amazon EC2 F1 instance. The modules allow an ALU to be run on an F1 instance.
+This repository is a demonstration of a Verilog ALU and supporting modules, taken from another project. The AXI and FIFO modules allow the ALU to run as custom logic on an Amazon EC2 F1 instance.
 
 The three modules are:
 * axi4lite\_to\_fifos.v
