@@ -1,13 +1,13 @@
 # Verilog Demo
 
-This repository is a demonstration of three interconnected Verilog modules, taken from another project and intended to run on an Amazon EC2 F1 instance.
+This repository is a demonstration of three interconnected Verilog modules, taken from another project and intended to run on an Amazon EC2 F1 instance. The modules allow an ALU to be run on an F1 instance.
 
 The three modules are:
 * axi4lite\_to\_fifos.v
 * fifo.v
 * alu.v
 
-The operation of the modules can be seen by executing the testbench: axi\_fifo\_alu\_tb/axi\_fifo\_alu\_tb
+The operation of the modules can be seen by running `make all` in the axi\_fifo\_alu\_tb directory.
 
 The AXI4-Lite module provides an interface for Amazon's PCIe connection to communicate with the FIFOs, allowing the host server to send commands and input data to the ALU, and in turn receive output data from the ALU.
 
